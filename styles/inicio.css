@@ -1,0 +1,192 @@
+:root {
+  --cor-primaria: #132a13;
+  --cor-secundaria: #31572c;
+  --cor-terciaria: #4f772d;
+  --cor-quartenaria: #90a955;
+  --cor-quintenaria: #ecf39e;
+  --cor-texto: #fafafa;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.container__cabecalho {
+  background-color: var(--cor-primaria);
+  height: 3rem;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+.link:hover {
+  color: var(--cor-quartenaria);
+}
+
+.container__principal {
+  background: linear-gradient(63.13deg, var(--cor-secundaria) 51.04%, var(--cor-quartenaria) 51.05%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container__principal .secao__texto {
+  margin-top: 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--cor-texto);
+}
+.container__principal .secao__texto .p__oi {
+  font-size: 25px;
+}
+.container__principal .secao__texto .p__nome {
+  font-size: 30px;
+}
+.container__principal .secao__texto .p__nome .blinking {
+  animation: blink 1s infinite;
+}
+.container__principal .secao__texto .p__profissao {
+  font-size: 25px;
+}
+.container__principal .secao__texto .botao {
+  background-color: var(--cor-terciaria);
+  height: 3rem;
+  border-radius: 20px;
+  font-size: 15px;
+  color: var(--cor-texto);
+  border: none;
+  transition: 0.9s;
+}
+.container__principal .secao__texto .botao:hover {
+  font-size: 20px;
+}
+.container__principal .secao__img {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+}
+.container__principal .secao__img .img__tablet {
+  display: none;
+}
+.container__principal .secao__img .img__cell {
+  display: block;
+}
+.container__principal .secao__img .img__computador {
+  display: none;
+}
+.container__principal .secao__img img {
+  animation: moveUpDown 2s infinite;
+}
+
+/* Tablets em modo paisagem (horizontal) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets em modo paisagem */
+  .container__principal {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .container__principal .secao__texto .p__oi {
+    font-size: 40px;
+  }
+  .container__principal .secao__texto .p__nome {
+    font-size: 50px;
+  }
+  .container__principal .secao__texto .p__profissao {
+    font-size: 40px;
+  }
+  .container__principal .secao__texto .botao {
+    width: auto;
+    font-size: 20px;
+  }
+  .container__principal .secao__img .img__tablet {
+    display: block;
+  }
+  .container__principal .secao__img .img__cell {
+    display: none;
+  }
+  .container__principal .secao__img .img__computador {
+    display: none;
+  }
+}
+/* Tablets em modo retrato (vertical) */
+@media only screen and (min-width: 768px) and (max-height: 1023px) {
+  /* Estilos para tablets em modo retrato */
+  .container__principal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__principal .secao__img .img__tablet {
+    display: block;
+  }
+  .container__principal .secao__img .img__cell {
+    display: none;
+  }
+  .container__principal .secao__img .img__computador {
+    display: none;
+  }
+  .container__sobreMim .sobreMim__imgs .img__cell {
+    display: none;
+  }
+  .container__sobreMim .sobreMim__imgs .img__tablet {
+    display: block;
+  }
+  .container__sobreMim .sobreMim__imgs .img__computador {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* Estilos para computadores de tela grande */
+  .container__principal {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .container__principal .secao__texto .p__oi {
+    font-size: 40px;
+  }
+  .container__principal .secao__texto .p__nome {
+    font-size: 50px;
+  }
+  .container__principal .secao__texto .p__profissao {
+    font-size: 40px;
+  }
+  .container__principal .secao__texto .botao {
+    width: auto;
+    font-size: 20px;
+  }
+  .container__principal .secao__img .img__tablet {
+    display: none;
+  }
+  .container__principal .secao__img .img__cell {
+    display: none;
+  }
+  .container__principal .secao__img .img__computador {
+    display: block;
+  }
+}/*# sourceMappingURL=inicio.css.map */

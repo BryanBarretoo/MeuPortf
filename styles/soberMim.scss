@@ -1,0 +1,127 @@
+:root {
+    --cor-primaria: #132a13;
+    --cor-secundaria: #31572c;
+    --cor-terciaria: #4f772d;
+    --cor-quartenaria: #90a955;
+    --cor-quintenaria: #42eb7a;
+    --cor-texto: #fafafa;
+}
+
+.container__sobreMim {
+    background-color: var(--cor-secundaria);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .sobreMim__imgs {
+        
+
+        .img__cell {
+            display: block;
+        }
+
+        .img__tablet {
+            display: none;
+        }
+
+        .img__computador {
+            display: none;
+        }
+    }
+
+    .sobreMim__text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: var(--cor-texto);
+        .sobreMim__h {
+            font-family: 'Moo Lah Lah', cursive;
+
+            font-size: 60px;
+        }
+        .soberMim__conteudo {
+            width: 70%;
+            font-family: 'PT Serif', serif;
+            font-size: 20px;
+            
+        }
+    }
+}
+
+
+/* Tablets em modo paisagem (horizontal) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets em modo paisagem */
+
+    .container__sobreMim {
+        flex-wrap: nowrap;
+
+        .sobreMim__imgs {
+            .img__cell {
+                display: none;
+            }
+
+            .img__tablet {
+                display: block;
+            }
+
+            .img__computador {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Tablets em modo retrato (vertical) */
+@media only screen and (min-width: 768px) and (max-height: 1023px) {
+    /* Estilos para tablets em modo retrato */
+
+    .container__sobreMim {
+        flex-wrap: nowrap;
+
+        .sobreMim__imgs {
+            .img__cell {
+                display: none;
+            }
+
+            .img__tablet {
+                display: block;
+            }
+
+            .img__computador {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    /* Estilos para computadores de tela grande */
+
+    .container__sobreMim {
+        flex-wrap: nowrap;
+        justify-items: center;
+
+        .sobreMim__imgs {
+            .img__cell {
+                display: none;
+            }
+
+            .img__tablet {
+                display: none;
+            }
+
+            .img__computador {
+                display: block;
+            }
+        }
+    }
+
+    .sobreMim__text {
+        margin-top: 10rem;
+    }
+
+}
