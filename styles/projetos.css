@@ -1,0 +1,15 @@
+:root {
+  --cor-primaria: #132a13;
+  --cor-secundaria: #31572c;
+  --cor-terciaria: #4f772d;
+  --cor-quartenaria: #90a955;
+  --cor-quintenaria: #42eb7a;
+  --cor-texto: #fafafa;
+}
+
+.container__projetos {
+  height: 100vh;
+}
+.container__projetos .centralizador .projetos-itens .escondido {
+  display: none;
+}/*# sourceMappingURL=projetos.css.map */

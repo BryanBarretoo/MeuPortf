@@ -16,7 +16,7 @@
     justify-content: center;
 
     .sobreMim__imgs {
-        
+
 
         .img__cell {
             display: block;
@@ -36,27 +36,34 @@
         flex-wrap: wrap;
         justify-content: center;
         color: var(--cor-texto);
-        .sobreMim__h {
-            font-family: 'Moo Lah Lah', cursive;
 
-            font-size: 60px;
-        }
-        .soberMim__conteudo {
-            width: 70%;
-            font-family: 'PT Serif', serif;
-            font-size: 20px;
-            
+        .sobreMim__quadro {
+            margin: 20px;
+            height: 100%;
+            padding: 2rem 0rem 2rem 2rem;
+            border: black 7px solid;
+            background-color: var(--cor-quartenaria);
+
+            .sobreMim__h {
+                font-family: 'Moo Lah Lah', cursive;
+                font-size: 60px;
+            }
+
+            .soberMim__conteudo {
+
+                font-family: 'PT Serif', serif;
+                font-size: 17px;
+            }
         }
     }
 }
-
 
 /* Tablets em modo paisagem (horizontal) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tablets em modo paisagem */
 
     .container__sobreMim {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
 
         .sobreMim__imgs {
             .img__cell {
@@ -69,6 +76,32 @@
 
             .img__computador {
                 display: none;
+            }
+        }
+
+        .sobreMim__text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: var(--cor-texto);
+
+            .sobreMim__quadro {
+                margin: 20px;
+                height: 100%;
+                padding: 2rem 0rem 2rem 2rem;
+                border: black 7px solid;
+                background-color: var(--cor-quartenaria);
+
+                .sobreMim__h {
+                    font-family: 'Moo Lah Lah', cursive;
+                    font-size: 60px;
+                }
+
+                .soberMim__conteudo {
+
+                    font-family: 'PT Serif', serif;
+                    font-size: 17px;
+                }
             }
         }
     }

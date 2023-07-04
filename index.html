@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/styles/inicio.css">
     <!--CSS DO SOBRE MIM-->
     <link rel="stylesheet" href="/styles/soberMim.css">
+    <!-- CSS DOS PROJETOS -->
+    <link rel="stylesheet" href="styles/projetos.css">
+    <!--CSS DO FOOTER-->
+    <link rel="stylesheet" href="styles/footer.css">
+    <!--CSS DO RESET-->
     <link rel="stylesheet" href="styles/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,24 +28,28 @@
     <header class="container__cabecalho">
         <ul class="cabecalho">
             <li>
-                <a class="link" aria-current="page" href="#">Início</a>
+                <a class="link" href="#inicio">Início</a>
             </li>
             <li>
-                <a class="link" href="#">Sobre mim</a>
+                <a class="link" href="#sobreMim">Sobre mim</a>
             </li>
             <li>
-                <a class="link" href="#">Projetos</a>
+                <a class="link" href="#projetos">Projetos</a>
             </li>
             <li>
-                <a class="link" href="#">Habilidades</a>
+                <a class="link" href="#habilidades">Habilidades</a>
             </li>
         </ul>
     </header>
 
+
+    <!-- INICIO -->
+
+
     <section class="container__principal">
         <div class="secao__texto">
             <p class="p__oi">Oi, eu sou</p>
-            <p class="p__nome">Bryan Barreto.<span class="blinking"> |</span></p>
+            <p class="p__nome">Bryan Barreto.<span class="blinking"> |</span> </p>
             <p class="p__profissao">Desenvolvedor Front-end</p>
             <button class="botao">
                 Linkedin
@@ -53,6 +62,10 @@
         </div>
     </section>
 
+
+    <!-- SOBRE MIM -->
+
+
     <section class="container__sobreMim">
 
         <div class="sobreMim__imgs">
@@ -63,28 +76,99 @@
         </div>
 
         <div class="sobreMim__text">
-            <p class="sobreMim__h">Sobre mim</p>
-            <div class="soberMim__conteudo">
-                <p>
-                    Meu nome é Bryan Barreto e sou um entusiasta do Front-End. Embora tenha tido meu primeiro contato
-                    com
-                    HTML e CSS em 2016, durante um curso no ensino fundamental II, foi apenas no segundo semestre de
-                    2022
-                    que decidi me dedicar seriamente ao desenvolvimento web. Desde então, tenho ampliado meus
-                    conhecimentos
-                    e habilidades, aplicando conceitos de design responsivo, otimização de performance e uso de
-                    bibliotecas
-                    modernas.
-                </p>
-                <p>
-                    Estou animado com as possibilidades do Front-End e busco constantemente desafios e oportunidades
-                    para
-                    crescer nessa área
-                </p>
+            <div class="sobreMim__quadro">
+                <p class="sobreMim__h">Sobre mim</p>
+                <div class="soberMim__conteudo">
+                    <p>
+                        Meu nome é Bryan Barreto e sou um entusiasta do Front-End. Embora tenha tido meu primeiro
+                        contato
+                        com
+                        HTML e CSS em 2016, durante um curso no ensino fundamental II, foi apenas no segundo semestre de
+                        2022
+                        que decidi me dedicar seriamente ao desenvolvimento web. Desde então, tenho ampliado meus
+                        conhecimentos
+                        e habilidades, aplicando conceitos de design responsivo, otimização de performance e uso de
+                        bibliotecas
+                        modernas.
+                    </p>
+                    <p>
+                        Estou animado com as possibilidades do Front-End e busco constantemente desafios e oportunidades
+                        para
+                        crescer nessa área
+                    </p>
+                </div>
             </div>
         </div>
 
     </section>
+
+
+    <!-- PROJETOS -->
+
+
+    <section class="container__projetos" id="projetos">
+
+        <div class="centralizador">
+            <h2 class="project">Projetos</h2>
+            <div class="projetos-itens">
+
+                <div class="pro">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+                <div class="pro escondido">
+                    <div class="breve">
+                        <p>EM BREVE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-link">
+                <button>Ver mais</button>
+                <a href="" target="_blank">Repositórios no github</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="contato">
+            <p>E-mail para contato: bryanbarreto03@outlook.com </p>
+            <p>Whatsapp para contato: (11) 94403-4005 </p>
+            <p>Imagem do south park: southparkstudios</p>
+        </div>
+        <div class="linkedin__github">
+            <a href=""><img src="img/placa-do-github.png" alt="" srcset=""></a>
+            <a href="http://www.linkedin.com/in/bryanbarretoo"><img src="img/logotipo-do-linkedin (2).png" alt=""
+                    srcset=""></a>
+        </div>
+    </footer>
 </body>
 
 </html>
