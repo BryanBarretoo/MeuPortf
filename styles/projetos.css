@@ -9,6 +9,41 @@
 
 .container__projetos {
   height: 100vh;
+  padding: 0 0 20px 0;
+  background-color: var(--cor-terciaria);
+  align-items: center;
+}
+.container__projetos .c__titulo {
+  padding: 20px 0 0 0;
+  display: flex;
+}
+.container__projetos .c__titulo .p__eventos {
+  margin: 0 auto;
+  font-family: "Finger Paint", cursive;
+  color: var(--cor-texto);
+  font-size: 45px;
+}
+.container__projetos .c__titulo .p__eventos .projectD {
+  padding: 0 0 0 5rem;
+}
+.container__projetos .centralizador {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: blue;
+  margin: 15px auto;
+  justify-content: center;
+}
+.container__projetos .centralizador .projetos-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.container__projetos .centralizador .projetos-itens .pro {
+  background-color: #42eb7a;
+  height: 70px;
+  width: 180px;
 }
 .container__projetos .centralizador .projetos-itens .escondido {
   display: none;
